@@ -1,2 +1,8 @@
 # Student_result_classifier
-This is a simple project where I created a small dataset and applied a rule-based classifier to predict whether a student will Pass or Fail in an exam.
+def predict_result(study_hours, attendance, assignments):
+    if study_hours < 3 and assignments == "No":
+        return "Fail"
+    elif attendance == "Low" and study_hours < 5:
+        return "Fail"
+    else:
+        return "Pass"
